@@ -21,3 +21,5 @@ Fixed code: See this [commit to configure `gatsby-remark-images'`](https://githu
 Video: Jason configures remark images in the [Adding Optimized Images to Post](https://frontendmasters.com/courses/gatsby/adding-optimized-images-to-posts/) at 1 minute, 49 seconds.
 
 <!-- View the `step6/blog-images` branch for final code for the section. -->
+
+<!-- https://frontendmasters.com/courses/gatsby/gatsby-graphql/ -->

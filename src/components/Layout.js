@@ -1,6 +1,6 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
-import Header from './header';
+import Header from './Header';
 
 const Layout = ({ children }) => (
   <>
