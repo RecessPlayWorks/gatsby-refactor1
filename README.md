@@ -23,3 +23,5 @@ Video: Jason configures remark images in the [Adding Optimized Images to Post](h
 <!-- View the `step6/blog-images` branch for final code for the section. -->
 
 <!-- https://frontendmasters.com/courses/gatsby/gatsby-graphql/ -->
+
+<!-- https://app.netlify.com/sites/gatsby-refactor1/overview -->
