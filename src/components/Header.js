@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 
 const NavLink = styled(Link)`
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: ${props => props.fontWeight || 'normal'};
   line-height: 1;
   margin: 0 0.5rem 0 0;
@@ -18,6 +18,7 @@ const NavLink = styled(Link)`
 
   &:last-of-type {
     margin-right: 0;
+    // background: green;
   }
 `;
 
@@ -28,15 +29,17 @@ const Header = () => (
       position: fixed;
       top: 0;
       width: 100vw;
+      height: 8vh;
       background: #f05323;
       box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.7);
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
+      font-size: 0.8rem;
     `}
   >
     <NavLink to="/" fontWeight="bold">
-      RecessPlayWorks
+      <span>RecessPlayWorks</span>
     </NavLink>
     <nav
       css={css`

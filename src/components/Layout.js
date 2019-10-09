@@ -16,15 +16,18 @@ const Layout = ({ children }) => (
         * + * {
           // margin-top: 1rem;
         }
-
+        html {
+          font-size: 62.5%;
+        }
         html,
         body {
+          background: fuchsia;
           margin: 0;
           color: #222;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
             Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
             'Segoe UI Symbol';
-          font-size: 18px;
+          font-size: 1.6rem;
           line-height: 1.4;
 
           /* remove margin for the main div that Gatsby mounts into */
@@ -41,7 +44,6 @@ const Layout = ({ children }) => (
         h6 {
           color: #fff;
           line-height: 1.1;
-
           + * {
             margin-top: 0.5rem;
           }
@@ -60,7 +62,7 @@ const Layout = ({ children }) => (
     <main
       css={css`
         width: 100vw;
-        // border: 2px dashed olive;
+        margin-top: 8vh;
         background: #ecdbc5;
       `}
     >

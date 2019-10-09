@@ -12,19 +12,23 @@ const Footer = () => (
   <footer
     css={css`
       width: 100vw;
-      background: #f05323;
+      background: #ec0083;
       display: flex;
       justify-content: space-between;
       padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
       height: 5vw;
       box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.8);
       z-index: 10;
-      position: absolute;
+      position: fixed;
+      bottom: 0;
+      p {
+        font-size: 1.3rem;
+      }
     `}
   >
   
     <div>
-        <h1>This is the Footer</h1>
+        <p>This is the Footer</p>
     </div>
   </footer>
 );
