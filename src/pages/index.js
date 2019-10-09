@@ -1,11 +1,10 @@
 import React from 'react';
-// import { Link } from 'gatsby';
+import Landing from './landing'
 
 import Layout from '../components/Layout';
 
 export default () => (
     <Layout>
-        <h1>Content Here</h1>
-        {/* <Link to="/about/">about &rarr;</Link> */}
+        <Landing/>
     </ Layout>
 );

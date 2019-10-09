@@ -1,6 +1,8 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
 import Header from './Header';
+import Footer from './Footer';
+// import BGimage from '../img/landingbackgroundImage.jpg'
 
 const Layout = ({ children }) => (
   <>
@@ -13,13 +15,13 @@ const Layout = ({ children }) => (
 
         /* More info: https://bit.ly/2PsCnzk */
         * + * {
-          margin-top: 1rem;
+          // margin-top: 1rem;
         }
 
         html,
         body {
           margin: 0;
-          color: #555;
+          color: #222;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
             Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
             'Segoe UI Symbol';
@@ -38,7 +40,7 @@ const Layout = ({ children }) => (
         h4,
         h5,
         h6 {
-          color: #222;
+          color: #fff;
           line-height: 1.1;
 
           + * {
@@ -47,7 +49,7 @@ const Layout = ({ children }) => (
         }
 
         strong {
-          color: #222;
+          color: fuchsia;
         }
 
         li {
@@ -56,14 +58,17 @@ const Layout = ({ children }) => (
       `}
     />
     <Header />
+    {/* <img className="bg-img" src={BGimage} alt="background of people and kids" /> */}
     <main
       css={css`
-        margin: 2rem auto;
-        max-width: 550px;
+        width: 100vw;
+        // border: 2px dashed olive;
+        background: #ecdbc5;
       `}
     >
       {children}
     </main>
+    <Footer/>
   </>
 );
 

@@ -1,6 +1,5 @@
 import React from 'react';
-// import { Link } from 'gatsby';
-import ContactForm from '../components/subcomponents/ContactForm2'
+import ContactForm from '../components/subcomponents/ContactForm'
 
 import Layout from '../components/Layout'
 
