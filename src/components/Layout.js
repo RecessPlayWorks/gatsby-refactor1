@@ -2,7 +2,6 @@ import React from 'react';
 import { Global, css } from '@emotion/core';
 import Header from './Header';
 import Footer from './Footer';
-// import BGimage from '../img/landingbackgroundImage.jpg'
 
 const Layout = ({ children }) => (
   <>
@@ -58,7 +57,6 @@ const Layout = ({ children }) => (
       `}
     />
     <Header />
-    {/* <img className="bg-img" src={BGimage} alt="background of people and kids" /> */}
     <main
       css={css`
         width: 100vw;
