@@ -1,9 +1,13 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
+import useSiteMetadata from '../hooks/use-site-metadata';
+import Helmet from 'react-helmet';/*Here is where we set our SEO */
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = ({ children }) => (
+const Layout = ({ children }) => {
+  const {title, description} = useSiteMetadata();
+  return (
   <>
     <Global
       styles={css`
@@ -58,6 +62,11 @@ const Layout = ({ children }) => (
         }
       `}
     />
+    <Helmet>
+      <html lang="en"/>
+      <title>{title}</title>
+      <meta name={title} description={description}/>
+      </Helmet> 
     <Header />
     <main
       css={css`
@@ -71,5 +80,6 @@ const Layout = ({ children }) => (
     <Footer/>
   </>
 );
+}
 
 export default Layout;

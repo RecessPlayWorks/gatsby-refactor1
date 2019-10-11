@@ -1,6 +1,14 @@
 module.exports = {
+  siteMetadata: {
+    title: "RecessPlayWorks",
+    description: "A place to rest, to play and to work."
+  },
     plugins: [
-        'gatsby-plugin-emotion',
+      'gatsby-plugin-emotion',
+      'gatsby-plugin-react-helmet',
+        
+       
+
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
